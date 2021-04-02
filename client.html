@@ -1,45 +1,90 @@
 <!DOCTYPE html>
 <html>
 <head>
+<script>
+/*1. buffer of all buttons pressed linked to a "view" screen
+2. After the buttons are entered, send the buffered input back to an sql server to store a history of the execution
+3. PHP will then pull the stored history of the most recent execution, calculate it, and return the answer to the screen*/
+</script>
 <style>
-	.container{
+	.number-container{
 		display: grid;
-		grid-template-columns: auto auto;
+		grid-template-columns: auto auto auto;
+		
 	}
-	.item{
-		padding: 20px;
+	.number-item{
+		padding: 10px;
 		text-align: center;
+		margin: 20px;
+	}
+	.fun-container{
+	}
+	.fun-item{
+	}
+	#window{ 
+		height:20%;
+		width:90%;
+		border:black;
+		border-style: solid;
+		border-width: 2px;
+		text-align:right;
+		margin: auto auto;
+	}
+	#calc-body{
+		width: 300px;
+		height: 500px;
+		border:red;
+		border-width:3px;
+		border-style:solid;
 	}
 </style>
 </head>
 <body>
-	<div class="item" class="container">
-		<div class="item" class="item">
-			<button>1</button>
+	<!--calculator body-->
+	<div id="calc-body">
+		<!--Screen-->
+		<div>
+			<div id="window">bonjour
+			</div>
 		</div>
-		<div class="item">
-			<button>1</button>
+		
+		<!--Functional buttons-->
+		<div class="fun-container">
+			<!--cancel, positive/negative, percent, mult, div, add, sub,equals-->
 		</div>
-		<div class="item">
-			<button>1</button>
-		</div>
-		<div class="item">
-			<button>1</button>
-		</div>
-		<div class="item">
-			<button>1</button>
-		</div>
-		<div class="item">
-			<button>1</button>
-		</div>
-		<div class="item">
-			<button>1</button>
-		</div>
-		<div class="item">
-			<button>1</button>
-		</div>
-		<div class="item">
-			<button>1</button>
+		
+		<!--Numbers-->
+		<div class="number-container"> 
+			<div class="number-item" class="item">
+				<button>1</button>
+			</div>
+			<div class="number-item">
+				<button>2</button>
+			</div>
+			<div class="number-item">
+				<button>3</button>
+			</div>
+			<div class="number-item">
+				<button>4</button>
+			</div>
+			<div class="number-item">
+				<button>5</button>
+			</div>
+			<div class="number-item">
+				<button>6</button>
+			</div>
+			<div class="number-item">
+				<button>7</button>
+			</div>
+			<div class="number-item">
+				<button>8</button>
+			</div>
+			<div class="number-item">
+				<button>9</button>
+			</div>
+			<div class="number-item">
+				<button>0</button>
+			</div>
 		</div>
 	</div>
 </body>
