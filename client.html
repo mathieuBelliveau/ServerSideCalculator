@@ -10,16 +10,32 @@
 	.number-container{
 		display: grid;
 		grid-template-columns: auto auto auto;
-		
+		border:blue;
+		border-width: 2px;
+		border-style: solid;
+		margin-top: 40px;
+		padding:5px;
 	}
 	.number-item{
-		padding: 10px;
 		text-align: center;
-		margin: 20px;
+		padding: 10px;
+		margin: 10px;
+		background-color:pink;
 	}
 	.fun-container{
+		display: grid;
+		grid-template-columns: auto auto auto auto;
+		border:orange;
+		border-width: 2px;
+		border-style: solid;
+		margin-top: 30px;
+		padding:5px;
 	}
 	.fun-item{
+		text-align: center;
+		margin: 5px;
+		padding: 10px;
+		background-color: tomato;
 	}
 	#window{ 
 		height:20%;
@@ -36,6 +52,7 @@
 		border:red;
 		border-width:3px;
 		border-style:solid;
+		padding:20px;
 	}
 </style>
 </head>
@@ -51,11 +68,35 @@
 		<!--Functional buttons-->
 		<div class="fun-container">
 			<!--cancel, positive/negative, percent, mult, div, add, sub,equals-->
+			<div class="fun-item">
+				<button>C</button>
+			</div>
+			<div class="fun-item">
+				<button>+/-</button>
+			</div>
+			<div class="fun-item">
+				<button>%</button>
+			</div>
+			<div class="fun-item">
+				<button>x</button>
+			</div>
+			<div class="fun-item">
+				<button>/</button>
+			</div>
+			<div class="fun-item">
+				<button>+</button>
+			</div>
+			<div class="fun-item">
+				<button>-</button>
+			</div>
+			<div class="fun-item">
+				<button>=</button>
+			</div>
 		</div>
 		
 		<!--Numbers-->
 		<div class="number-container"> 
-			<div class="number-item" class="item">
+			<div class="number-item">
 				<button>1</button>
 			</div>
 			<div class="number-item">
